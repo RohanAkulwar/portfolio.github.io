@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">MyExperience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Rohan Akulwar</span><br>From Nanded.</h1>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_20230425_191518.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Result-driven and skilled Java Software Engineer with a solid background in software development and a
+                        strong foundation in Java, React, HTML, CSS, and JavaScript. Adept at analyzing system,
+                        requirements, designing software architecture, and writing clean, scalable code. Proven experience in full stack development
+                         with a focus on creating high-quality software applications. Strong project
+                        management skills and the ability to collaborate effectively with development teams.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                            <p class="tab-links1" onclick="opentab('Education')"> Education</p>
+                         
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><spam>Programming Languages:</spam> <br>Java,Python</li>
+                                <li><spam>Web Technologies:</spam><br> React, HTML, CSS, JavaScript, MySQL, Cloud Technologies, Git </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><spam>2016-2017:</spam> <br>Sadhana High School, Degloor, Nanded
+                                    SSC , Percentage: 71.80 / 100
+                                    </li>
+                                <li><spam>2018-2019:</spam><br>Sanskriti Junior College Purna, Parbhani
+                                    HSC , Percentage: 62.31 / 100
+                                </li>
+                                <li><spam>2020-2021:</spam><br>Government Polytechnic,Jintur, Parbhani
+                                    Diploma -Mechanical Engineering , Percentage: 75.64 / 100
+                                </li>
+                                <li><spam>2021 - 2025:</spam><br>NBN Sinhgad School Of Engineering, Pune
+                                    B.E. - Information Technology ,  CGPA: 6.07 / 10
+
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>Intership Studio</h2>
+                        <li>One-month internship specializing in AWS at Internship Studio.</li>
+                        <li>Hands-on experience with key AWS services, including EC2, S3, Lambda, and CloudFormation.</li>
+                        <li>Collaborated on designing, deploying, and optimizing cloud infrastructure.</li>
+                        <li>Troubleshooting and issue resolution within AWS environments.</li>
+                        <li>Actively contributed to team meetings and demonstrated adaptability and problem-solving skills</li>
+                        <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+             <div class="work">
+                <img src="images/ma.jpeg">
+                <div class="layer">
+                    <h3>Student Management System</h3>
+                    <p>A Student Management System Project is also known as a Student Information System (SIS).
+                        These systems work to coordinate scheduling and communications between faculty regarding students.
+                        This system exists to simplify information tracking for both parents and administrative staff.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="images/appp.jpg">
+                <div class="layer">
+                    <h3>Fitness Android Application</h3>
+                    <p>The Fitness App can be used for a variety of different uses, including obtaining information about health and medical issues (e.g., WebMD).
+                        Providing a list of exercises (e.g., Fitness Buddy), keeping track of nutritional and dietary information (e.g., Calorie Counter and Diet Tracker).
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="images/web.jpg">
+                <div class="layer">
+                    <h3>Restaurant Website</h3>
+                    <p> This project aims to create a fully responsive restaurant website, you can add many pages and links to your website. You can extend the
+                        functionality by connecting it with a real-time database and allowing users to order food online
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+            
+          </div>
+          <a href="#"><i class="btn">see more</i>
+     </div> 
+    </div>
+     
+     <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>akulwar.rohan2001@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+91 8308584814</p>
+                <div class="social-icons">
+                 <a href="http://linkedin.com/in/rohan-akulwar-8930272a5"><i class="fa-brands fa-linkedin"></i></a>
+                 <a href=""><i class="fa-brands fa-facebook"></i></a>
+                 <a href="https://www.instagram.com/27x7.eraya?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram"></i></a>
+                 <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+                </div>
+                <a href="images/Rohan's Resume.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>Download CV</a>
+            </div>
+
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text"name="Name" placeholder="Your Name" required>
+                    <input type="email"name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+         </div>
+         <div class="Copyright">
+            <p>Develop by Rohan Akulwar <i class="fa-regular fa-copyright"></i> 2024-25</p>
+         </div>
+        
+     </div>
+   
+   
+   
+   
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwumALoh18EF2ytmI2d8Ua688wKIIzImjmEDRKmQ_Er0KTgczEfH7wZReLAnrSouNwqYA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
